@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
@@ -11,28 +13,43 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary neon-glow">
+            <Link to="/" className="text-2xl font-bold text-primary neon-glow">
               Chill Videowala
-            </h1>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-smooth">
+            <Link 
+              to="/" 
+              className={`transition-smooth ${location.pathname === '/' ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
               Home
-            </a>
-            <a href="#services" className="text-foreground hover:text-primary transition-smooth">
+            </Link>
+            <Link 
+              to="/services" 
+              className={`transition-smooth ${location.pathname === '/services' ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
               Services
-            </a>
-            <a href="#portfolio" className="text-foreground hover:text-primary transition-smooth">
+            </Link>
+            <Link 
+              to="/portfolio" 
+              className={`transition-smooth ${location.pathname === '/portfolio' ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
               Portfolio
-            </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-smooth">
+            </Link>
+            <Link 
+              to="/about" 
+              className={`transition-smooth ${location.pathname === '/about' ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
               About
-            </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-smooth">
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`transition-smooth ${location.pathname === '/contact' ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* CTA Button */}
@@ -58,21 +75,41 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              <a href="#home" className="text-foreground hover:text-primary transition-smooth">
+              <Link 
+                to="/" 
+                className={`transition-smooth ${location.pathname === '/' ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Home
-              </a>
-              <a href="#services" className="text-foreground hover:text-primary transition-smooth">
+              </Link>
+              <Link 
+                to="/services" 
+                className={`transition-smooth ${location.pathname === '/services' ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Services
-              </a>
-              <a href="#portfolio" className="text-foreground hover:text-primary transition-smooth">
+              </Link>
+              <Link 
+                to="/portfolio" 
+                className={`transition-smooth ${location.pathname === '/portfolio' ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Portfolio
-              </a>
-              <a href="#about" className="text-foreground hover:text-primary transition-smooth">
+              </Link>
+              <Link 
+                to="/about" 
+                className={`transition-smooth ${location.pathname === '/about' ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 About
-              </a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-smooth">
+              </Link>
+              <Link 
+                to="/contact" 
+                className={`transition-smooth ${location.pathname === '/contact' ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Contact
-              </a>
+              </Link>
               <Button variant="hero" size="sm" className="w-fit">
                 Get Quote
               </Button>
