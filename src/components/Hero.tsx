@@ -21,53 +21,65 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-block mb-6">
             <div className="px-4 py-2 bg-card/50 border border-primary/30 rounded-full text-sm text-primary backdrop-blur-sm">
-              ✨ Professional Post-Production Services
+              ✨ Creative Content Agency
             </div>
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-foreground">POST-PRODUCTION</span>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <span className="text-primary neon-glow">VIDEO PRODUCTION,</span>
             <br />
-            <span className="text-primary neon-glow">PERFECTION</span>
+            <span className="text-foreground">WHAT CREATED BY</span>
             <br />
-            <span className="text-foreground">BY CHILL VIDEOWALA</span>
+            <span className="text-primary neon-glow">FILMMAKERS</span>
+            <br />
+            <span className="text-foreground">TOGETHER WITH</span>
+            <br />
+            <span className="text-primary neon-glow">MARKETERS</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Transform raw footage into cinematic masterpieces with our expert color grading, 
-            sound design, and visual effects services.
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-md mx-auto">
+            Content is the new language. We help businesses speak it
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              <Play className="mr-2" />
-              View Our Work
-            </Button>
-            <Button variant="neon" size="lg" className="text-lg px-8 py-6">
-              Get Free Quote
+          {/* CTA Button */}
+          <div className="mb-12">
+            <Button variant="hero" size="lg" className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:bg-primary/90">
+              Fill in the brief →
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary neon-glow">500+</div>
-              <div className="text-sm text-muted-foreground">Projects Completed</div>
+          {/* Service Tags */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+            <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
+              Podcasts
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary neon-glow">50+</div>
-              <div className="text-sm text-muted-foreground">Happy Clients</div>
+            <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
+              Interview
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary neon-glow">24/7</div>
-              <div className="text-sm text-muted-foreground">Support</div>
+            <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
+              Courses
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary neon-glow">4K</div>
-              <div className="text-sm text-muted-foreground">Quality Output</div>
+            <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
+              Advertising
+            </div>
+            <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
+              Show
+            </div>
+          </div>
+
+          {/* Service Descriptions */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto text-left">
+            <div>
+              <p className="text-sm text-muted-foreground">
+                Own studio for content creation or on-site filming
+              </p>
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground">
+                Full provision of all organizational issues and equipment
+              </p>
             </div>
           </div>
         </div>
