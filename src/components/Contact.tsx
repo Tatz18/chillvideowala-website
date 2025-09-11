@@ -107,7 +107,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-medium text-foreground">Email</div>
-                    <div className="text-muted-foreground">hello@chillvideowala.com</div>
+                    <div className="text-muted-foreground">chillvideowala@gmail.com</div>
                   </div>
                 </div>
                 
@@ -117,7 +117,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-medium text-foreground">Phone</div>
-                    <div className="text-muted-foreground">+91 98765 43210</div>
+                    <div className="text-muted-foreground">8981104129 / 8918258722</div>
                   </div>
                 </div>
                 
@@ -126,8 +126,18 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-success" />
                   </div>
                   <div>
-                    <div className="font-medium text-foreground">Studio Location</div>
-                    <div className="text-muted-foreground">Mumbai, Maharashtra</div>
+                    <div className="font-medium text-foreground">Corporate Office</div>
+                    <div className="text-muted-foreground">Barua Colony beldanga, Murshidabad, 742189</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <MapPin className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <div className="font-medium text-foreground">Branch Office</div>
+                    <div className="text-muted-foreground">Chayaneer apartment, south bankimpally madhyamgram, 700129</div>
                   </div>
                 </div>
                 

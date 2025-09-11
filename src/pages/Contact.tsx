@@ -11,18 +11,23 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Visit Us",
-      details: ["123 Creative Street", "Los Angeles, CA 90210", "United States"]
+      title: "Corporate Office",
+      details: ["Barua Colony beldanga", "Murshidabad, 742189"]
+    },
+    {
+      icon: <MapPin className="w-6 h-6" />,
+      title: "Branch Office",
+      details: ["Chayaneer apartment", "south bankimpally madhyamgram", "700129"]
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"]
+      details: ["8981104129", "8918258722"]
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      details: ["hello@chillvideowala.com", "projects@chillvideowala.com"]
+      details: ["chillvideowala@gmail.com"]
     },
     {
       icon: <Clock className="w-6 h-6" />,
