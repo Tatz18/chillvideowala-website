@@ -29,27 +29,27 @@ const About = () => {
             </h2>
 
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              At Chill Videowala, we believe every frame tells a story. Our team of creative 
-              professionals combines technical expertise with artistic vision to deliver 
-              post-production services that exceed expectations.
+              At Chill Videowala, we are India's leading pre and post production studio specializing in 
+              corporate photography, wedding films, VFX, and creative content. Based in West Bengal, 
+              we serve clients across India with cutting-edge technology and artistic excellence.
             </p>
 
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3">
                 <CheckCircle className="h-6 w-6 text-success" />
-                <span className="text-foreground">5+ years of industry experience</span>
+                <span className="text-foreground">8+ years serving clients across India</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="h-6 w-6 text-success" />
-                <span className="text-foreground">State-of-the-art equipment and software</span>
+                <span className="text-foreground">Professional studio with latest equipment</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="h-6 w-6 text-success" />
-                <span className="text-foreground">Collaborative approach with clients</span>
+                <span className="text-foreground">Specialized in corporate and wedding projects</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="h-6 w-6 text-success" />
-                <span className="text-foreground">Fast turnaround without compromising quality</span>
+                <span className="text-foreground">Expert VFX and 3D editing capabilities</span>
               </div>
             </div>
 
@@ -80,8 +80,8 @@ const About = () => {
             <Card className="gradient-card border-border/50 text-center p-8">
               <CardContent className="p-0">
                 <Users className="h-12 w-12 text-success mx-auto mb-4" />
-                <div className="text-3xl font-bold text-success mb-2">200+</div>
-                <div className="text-sm text-muted-foreground">Happy Clients</div>
+                <div className="text-3xl font-bold text-primary neon-glow mb-2">500+</div>
+                <div className="text-sm text-muted-foreground">Projects Done</div>
               </CardContent>
             </Card>
 

@@ -1,51 +1,51 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
-  Palette, 
-  Volume2, 
+  Camera, 
   Sparkles, 
-  Film, 
   Zap, 
+  Film, 
+  Palette, 
   Target,
   ArrowRight
 } from "lucide-react";
 
 const services = [
   {
-    icon: <Film className="h-8 w-8" />,
+    icon: <Camera className="h-8 w-8" />,
     title: "Corporate Photo & Video",
-    description: "Professional corporate photography and videography for businesses, events, and promotional content.",
-    features: ["Corporate Events", "Product Photography", "Promotional Videos", "Team Headshots"]
+    description: "Professional corporate photography and videography services for businesses, events, and promotional content.",
+    features: ["Corporate Events", "Product Photography", "Promotional Videos", "Business Headshots"]
   },
   {
     icon: <Sparkles className="h-8 w-8" />,
     title: "Wedding Photography & Films",
-    description: "Capture your special day with cinematic wedding films and stunning photography.",
-    features: ["Pre-Wedding Shoots", "Ceremony Coverage", "Reception Films", "Wedding Albums"]
+    description: "Capture your special moments with cinematic wedding films and stunning photography that tells your love story.",
+    features: ["Pre-Wedding Shoots", "Ceremony Coverage", "Reception Documentation", "Wedding Albums"]
   },
   {
     icon: <Zap className="h-8 w-8" />,
     title: "VFX & 3D Editing",
-    description: "Advanced visual effects and 3D editing to create stunning and immersive content.",
-    features: ["3D Animation", "Visual Effects", "Compositing", "Motion Graphics"]
+    description: "Advanced visual effects and 3D editing services to create stunning, immersive content that captivates audiences.",
+    features: ["3D Animation", "Visual Effects", "Compositing", "CGI Integration"]
   },
   {
     icon: <Target className="h-8 w-8" />,
     title: "Model Portfolio Shoots",
-    description: "Professional model portfolio photography and videography to showcase talent.",
-    features: ["Fashion Photography", "Portfolio Videos", "Headshots", "Creative Concepts"]
+    description: "Professional model portfolio photography and videography to showcase talent effectively for the fashion industry.",
+    features: ["Fashion Photography", "Portfolio Videos", "Creative Headshots", "Concept Development"]
+  },
+  {
+    icon: <Film className="h-8 w-8" />,
+    title: "2D Editing & Motion Graphics",
+    description: "Professional 2D video editing and motion graphics design for all your creative and commercial needs.",
+    features: ["Video Editing", "Motion Graphics", "Social Media Content", "Graphic Design"]
   },
   {
     icon: <Palette className="h-8 w-8" />,
-    title: "2D Editing & Design",
-    description: "Professional 2D editing, motion graphics, and graphic design services.",
-    features: ["Video Editing", "Motion Graphics", "Graphic Design", "Social Media Content"]
-  },
-  {
-    icon: <Volume2 className="h-8 w-8" />,
-    title: "Audio Post-Production",
-    description: "Complete audio services including mixing, mastering, and sound design.",
-    features: ["Audio Mixing", "Sound Design", "Voice Enhancement", "Music Composition"]
+    title: "Color Grading & Finishing",
+    description: "Transform your footage with professional color grading and finishing services for cinematic quality output.",
+    features: ["Color Correction", "Cinematic Grading", "Final Output", "Quality Control"]
   }
 ];
 

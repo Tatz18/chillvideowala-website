@@ -20,9 +20,8 @@ const Footer = () => {
               Chill Videowala
             </h2>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Professional post-production services that transform your vision into 
-              cinematic reality. From color grading to sound design, we handle it all 
-              with passion and precision.
+              India's premier pre and post production studio specializing in corporate photography, 
+              wedding films, VFX, and creative content. Based in West Bengal, serving clients nationwide.
             </p>
             <div className="flex items-center gap-4">
               <Button variant="outline" size="sm" className="p-2">
@@ -46,27 +45,27 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a href="#services" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Color Grading
+                  Corporate Photo & Video
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Sound Design
+                  Wedding Films
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Visual Effects
+                  VFX & 3D Editing
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Video Editing
+                  Model Portfolio
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Motion Graphics
+                  2D Editing
                 </a>
               </li>
             </ul>
@@ -78,15 +77,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-sm">hello@chillvideowala.com</span>
+                <span className="text-sm">chillvideowala@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-sm">+91 98765 43210</span>
+                <span className="text-sm">8981104129 / 8918258722</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span className="text-sm">Mumbai, Maharashtra</span>
+                <span className="text-sm">West Bengal, India</span>
               </div>
             </div>
           </div>

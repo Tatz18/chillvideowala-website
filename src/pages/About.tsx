@@ -9,49 +9,49 @@ const About = () => {
     {
       icon: <Award className="w-6 h-6" />,
       title: "Excellence",
-      description: "We strive for perfection in every frame, every cut, and every color grade."
+      description: "We strive for perfection in every shot, every edit, and every final delivery."
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: "Collaboration",
-      description: "Working closely with our clients to bring their vision to life."
+      description: "Working closely with our clients across India to bring their vision to life."
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Reliability",
-      description: "Delivering high-quality work on time, every time."
+      description: "Delivering high-quality work on time, every time, with professional service."
     },
     {
       icon: <Lightbulb className="w-6 h-6" />,
       title: "Innovation",
-      description: "Embracing new technologies and creative approaches."
+      description: "Using latest technology and creative approaches for stunning visual content."
     }
   ];
 
   const team = [
     {
-      name: "Alex Rodriguez",
-      role: "Creative Director",
+      name: "Rajesh Kumar",
+      role: "Creative Director & Lead Editor",
       image: "/placeholder.svg",
-      bio: "15+ years in video production with expertise in storytelling and brand development."
+      bio: "8+ years in video production specializing in corporate and wedding cinematography across India."
     },
     {
-      name: "Sarah Chen",
-      role: "Lead Editor",
+      name: "Priya Sharma",
+      role: "VFX & 3D Specialist",
       image: "/placeholder.svg",
-      bio: "Award-winning editor specialized in narrative structure and pacing."
+      bio: "Expert in visual effects and 3D animation with experience in major Indian film projects."
     },
     {
-      name: "Marcus Johnson",
-      role: "Color Grading Specialist",
+      name: "Amit Patel",
+      role: "Lead Photographer",
       image: "/placeholder.svg",
-      bio: "Cinematic color grading expert with Hollywood film experience."
+      bio: "Professional photographer specializing in corporate events and model portfolio shoots."
     },
     {
-      name: "Emma Thompson",
-      role: "Motion Graphics Artist",
+      name: "Sneha Reddy",
+      role: "Color Grading Artist",
       image: "/placeholder.svg",
-      bio: "Creative animator bringing brands to life through motion and design."
+      bio: "Cinematic color grading expert bringing visual stories to life with perfect aesthetics."
     }
   ];
 
@@ -67,24 +67,25 @@ const About = () => {
               <span className="text-primary neon-glow">ABOUT US</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We are filmmakers and marketers working together to create content 
-              that speaks the new language of business communication.
+              We are India's premier pre and post production studio, specializing in corporate photography, 
+              wedding films, VFX, model portfolios, and creative content. Based in West Bengal, serving clients nationwide.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                Content is the new language
+                Bringing Your Vision to Life
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                In today's digital world, visual storytelling has become the primary 
-                way businesses communicate with their audiences. We help brands speak 
-                this language fluently.
+                At Chill Videowala, we are passionate about creating stunning visual content 
+                that tells your story. From corporate events to wedding celebrations, 
+                we capture moments that matter.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                Our team combines creative filmmaking expertise with marketing intelligence 
-                to produce content that not only looks amazing but drives real business results.
+                Our team combines years of experience with cutting-edge technology to deliver 
+                exceptional photography, videography, VFX, and post-production services 
+                across India.
               </p>
               <Button variant="hero" size="lg">
                 Get to Know Us Better

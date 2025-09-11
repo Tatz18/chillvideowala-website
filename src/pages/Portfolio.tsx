@@ -8,54 +8,54 @@ import { Play, ExternalLink } from "lucide-react";
 const Portfolio = () => {
   const projects = [
     {
-      title: "Corporate Brand Video",
-      category: "Brand Video",
+      title: "Corporate Brand Film",
+      category: "Corporate",
       image: "/placeholder.svg",
-      description: "Professional corporate video showcasing company values and culture",
-      tags: ["Corporate", "Brand Story", "Professional"]
+      description: "Professional corporate video showcasing company values and culture for leading Indian tech firm",
+      tags: ["Corporate Video", "Color Grading", "Motion Graphics"]
+    },
+    {
+      title: "Wedding Cinematic Film",
+      category: "Wedding",
+      image: "/placeholder.svg",
+      description: "Beautiful wedding cinematography capturing magical moments of traditional Indian wedding celebration",
+      tags: ["Wedding Film", "VFX", "Color Grading"]
+    },
+    {
+      title: "Model Portfolio Shoot",
+      category: "Fashion",
+      image: "/placeholder.svg",
+      description: "Professional model portfolio photography and videography for aspiring fashion models",
+      tags: ["Fashion Photography", "Portfolio Video", "Editing"]
     },
     {
       title: "Product Launch Campaign",
-      category: "Product Video",
+      category: "Commercial",
       image: "/placeholder.svg",
-      description: "Dynamic product showcase with motion graphics and engaging storytelling",
-      tags: ["Product", "Motion Graphics", "Marketing"]
+      description: "Dynamic product launch video with 3D animations and visual effects for major consumer brand",
+      tags: ["3D Animation", "Motion Graphics", "VFX"]
     },
     {
-      title: "Podcast Series",
-      category: "Content Creation",
+      title: "Corporate Event Coverage",
+      category: "Corporate",
       image: "/placeholder.svg",
-      description: "Weekly podcast series with professional audio and video production",
-      tags: ["Podcast", "Interview", "Series"]
+      description: "Comprehensive event coverage including multi-camera setup for corporate summit",
+      tags: ["Event Coverage", "Multi-cam Editing", "Live Production"]
     },
     {
-      title: "Social Media Content",
-      category: "Social Media",
+      title: "Fashion Brand Campaign",
+      category: "Fashion",
       image: "/placeholder.svg",
-      description: "Engaging social media content package for Instagram and TikTok",
-      tags: ["Social Media", "Short Form", "Viral"]
-    },
-    {
-      title: "Documentary Film",
-      category: "Documentary",
-      image: "/placeholder.svg",
-      description: "Award-winning documentary with cinematic color grading and sound design",
-      tags: ["Documentary", "Cinematic", "Storytelling"]
-    },
-    {
-      title: "Training Course",
-      category: "Educational",
-      image: "/placeholder.svg",
-      description: "Professional training course with screen recordings and animations",
-      tags: ["Education", "Training", "Course"]
+      description: "High-fashion brand campaign with creative direction and post-production for luxury fashion house",
+      tags: ["Fashion Film", "VFX", "Color Grading"]
     }
   ];
 
   const stats = [
     { number: "500+", label: "Projects Completed" },
-    { number: "50+", label: "Happy Clients" },
-    { number: "5M+", label: "Views Generated" },
-    { number: "98%", label: "Client Satisfaction" }
+    { number: "150+", label: "Happy Clients" },
+    { number: "8+", label: "Years Experience" },
+    { number: "4.9", label: "Client Rating" }
   ];
 
   return (
@@ -69,7 +69,8 @@ const Portfolio = () => {
             <span className="text-primary neon-glow">OUR PORTFOLIO</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Discover our latest projects and see how we transform ideas into compelling visual stories
+            Explore our diverse portfolio showcasing corporate photography, wedding films, VFX projects, 
+            model portfolios, and creative content produced across India
           </p>
 
           {/* Stats */}

@@ -8,54 +8,54 @@ const portfolioItems = [
   {
     id: 1,
     title: "Corporate Brand Film",
-    category: "Commercial",
+    category: "Corporate",
     image: timelineInterface,
     duration: "2:30",
-    tags: ["Color Grading", "Sound Design", "Motion Graphics"]
+    tags: ["Corporate Video", "Color Grading", "Motion Graphics"]
   },
   {
     id: 2,
-    title: "Music Video Production",
-    category: "Music",
+    title: "Wedding Cinematic Film",
+    category: "Wedding",
     image: equipmentGrid,
-    duration: "3:45",
-    tags: ["VFX", "Color Grading", "Editing"]
+    duration: "8:45",
+    tags: ["Wedding Film", "VFX", "Color Grading"]
   },
   {
     id: 3,
-    title: "Documentary Series",
-    category: "Documentary",
+    title: "Model Portfolio Shoot",
+    category: "Fashion",
     image: timelineInterface,
-    duration: "45:00",
-    tags: ["Audio Mixing", "Color Correction", "Finishing"]
+    duration: "3:20",
+    tags: ["Fashion Photography", "Portfolio Video", "Editing"]
   },
   {
     id: 4,
-    title: "Fashion Campaign",
-    category: "Fashion",
+    title: "Product Launch Campaign",
+    category: "Commercial",
     image: equipmentGrid,
-    duration: "1:20",
-    tags: ["Cinematic Grading", "Motion Graphics", "VFX"]
+    duration: "1:45",
+    tags: ["3D Animation", "Motion Graphics", "VFX"]
   },
   {
     id: 5,
-    title: "Tech Product Launch",
-    category: "Tech",
+    title: "Corporate Event Coverage",
+    category: "Corporate",
     image: timelineInterface,
-    duration: "2:15",
-    tags: ["3D Graphics", "Sound Design", "Color Grading"]
+    duration: "5:15",
+    tags: ["Event Coverage", "Multi-cam Editing", "Color Correction"]
   },
   {
     id: 6,
-    title: "Event Highlight Reel",
-    category: "Event",
+    title: "Fashion Brand Campaign",
+    category: "Fashion",
     image: equipmentGrid,
-    duration: "4:30",
-    tags: ["Multi-cam Editing", "Audio Mixing", "Color Correction"]
+    duration: "2:30",
+    tags: ["Fashion Film", "VFX", "Color Grading"]
   }
 ];
 
-const categories = ["All", "Commercial", "Music", "Documentary", "Fashion", "Tech", "Event"];
+const categories = ["All", "Corporate", "Wedding", "Fashion", "Commercial"];
 
 const Portfolio = () => {
   return (
