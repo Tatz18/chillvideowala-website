@@ -71,6 +71,33 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Company */}
+          <div>
+            <h3 className="font-bold text-foreground mb-4">Company</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="/about" className="text-muted-foreground hover:text-primary transition-smooth">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/our-team" className="text-muted-foreground hover:text-primary transition-smooth">
+                  Our Team
+                </a>
+              </li>
+              <li>
+                <a href="/our-gears" className="text-muted-foreground hover:text-primary transition-smooth">
+                  Our Gears
+                </a>
+              </li>
+              <li>
+                <a href="/portfolio" className="text-muted-foreground hover:text-primary transition-smooth">
+                  Portfolio
+                </a>
+              </li>
+            </ul>
+          </div>
+
           {/* Contact Info */}
           <div>
             <h3 className="font-bold text-foreground mb-4">Get in Touch</h3>
