@@ -13,8 +13,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-primary neon-glow">
-              Chill Videowala
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/6aefb2bd-79c8-424a-bc9c-bf460b8aabe3.png" 
+                alt="Chill Video Wala" 
+                className="h-8 w-auto"
+              />
             </Link>
           </div>
 
