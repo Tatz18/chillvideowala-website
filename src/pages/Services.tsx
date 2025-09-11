@@ -7,40 +7,40 @@ import { Play, Edit, Palette, Volume2, Zap, Award } from "lucide-react";
 const Services = () => {
   const services = [
     {
+      icon: <Play className="w-8 h-8" />,
+      title: "Corporate Photo & Videography",
+      description: "Professional corporate photography and videography services for businesses and events.",
+      features: ["Corporate Events", "Product Photography", "Promotional Videos", "Business Headshots"]
+    },
+    {
       icon: <Edit className="w-8 h-8" />,
-      title: "Video Editing",
-      description: "Professional video editing with smooth transitions, perfect timing, and engaging storytelling.",
-      features: ["Cut & Trim", "Transitions", "Text Overlays", "Multi-camera Editing"]
-    },
-    {
-      icon: <Palette className="w-8 h-8" />,
-      title: "Color Grading",
-      description: "Transform your footage with cinematic color grading and professional color correction.",
-      features: ["Color Correction", "Cinematic Look", "Brand Consistency", "Mood Enhancement"]
-    },
-    {
-      icon: <Volume2 className="w-8 h-8" />,
-      title: "Audio Design",
-      description: "Crystal clear audio mixing, sound effects, and background music that enhances your story.",
-      features: ["Audio Mixing", "Sound Effects", "Voiceover", "Background Music"]
+      title: "Wedding Photography & Films",
+      description: "Capture your special moments with cinematic wedding films and stunning photography.",
+      features: ["Pre-Wedding Shoots", "Ceremony Coverage", "Reception Documentation", "Wedding Albums"]
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Motion Graphics",
-      description: "Eye-catching animations, lower thirds, and motion graphics that bring your content to life.",
-      features: ["2D Animation", "Lower Thirds", "Logo Animation", "Infographics"]
-    },
-    {
-      icon: <Play className="w-8 h-8" />,
-      title: "Video Production",
-      description: "Complete video production services from concept to final delivery.",
-      features: ["Concept Development", "Scripting", "Filming", "Post-Production"]
+      title: "VFX & 3D Editing",
+      description: "Advanced visual effects and 3D editing services to create stunning, immersive content.",
+      features: ["3D Animation", "Visual Effects", "Compositing", "CGI Integration"]
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: "Brand Videos",
-      description: "Professional brand videos that tell your story and connect with your audience.",
-      features: ["Brand Story", "Product Videos", "Corporate Videos", "Social Media Content"]
+      title: "Model Portfolio Shoots",
+      description: "Professional model portfolio photography and videography to showcase talent effectively.",
+      features: ["Fashion Photography", "Portfolio Videos", "Creative Headshots", "Concept Development"]
+    },
+    {
+      icon: <Palette className="w-8 h-8" />,
+      title: "2D Editing & Motion Graphics",
+      description: "Professional 2D video editing and motion graphics design for all your creative needs.",
+      features: ["Video Editing", "Motion Graphics", "Social Media Content", "Graphic Design"]
+    },
+    {
+      icon: <Volume2 className="w-8 h-8" />,
+      title: "Audio Post-Production",
+      description: "Complete audio services including mixing, mastering, and custom sound design.",
+      features: ["Audio Mixing", "Sound Design", "Voice Enhancement", "Music Composition"]
     }
   ];
 
@@ -55,7 +55,7 @@ const Services = () => {
             <span className="text-primary neon-glow">OUR SERVICES</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Comprehensive video production and post-production services to bring your vision to life
+            Complete pre and post production services for corporate, wedding, and creative projects
           </p>
         </div>
       </section>

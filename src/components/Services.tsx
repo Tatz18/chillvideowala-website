@@ -12,40 +12,40 @@ import {
 
 const services = [
   {
-    icon: <Palette className="h-8 w-8" />,
-    title: "Color Grading",
-    description: "Professional color correction and cinematic color grading to enhance mood and visual storytelling.",
-    features: ["HDR Color Grading", "Cinematic Look Development", "Color Matching", "DaVinci Resolve Workflow"]
-  },
-  {
-    icon: <Volume2 className="h-8 w-8" />,
-    title: "Sound Design",
-    description: "Complete audio post-production including mixing, mastering, and custom sound effects.",
-    features: ["Audio Mixing", "Sound Effects", "Voice Enhancement", "Surround Sound"]
+    icon: <Film className="h-8 w-8" />,
+    title: "Corporate Photo & Video",
+    description: "Professional corporate photography and videography for businesses, events, and promotional content.",
+    features: ["Corporate Events", "Product Photography", "Promotional Videos", "Team Headshots"]
   },
   {
     icon: <Sparkles className="h-8 w-8" />,
-    title: "Visual Effects",
-    description: "Stunning VFX and compositing to bring your creative vision to life.",
-    features: ["Green Screen Removal", "Motion Graphics", "3D Compositing", "Particle Effects"]
-  },
-  {
-    icon: <Film className="h-8 w-8" />,
-    title: "Video Editing",
-    description: "Professional video editing with smooth transitions and perfect pacing.",
-    features: ["Multi-cam Editing", "Transitions & Effects", "Sync & Timing", "Format Conversion"]
+    title: "Wedding Photography & Films",
+    description: "Capture your special day with cinematic wedding films and stunning photography.",
+    features: ["Pre-Wedding Shoots", "Ceremony Coverage", "Reception Films", "Wedding Albums"]
   },
   {
     icon: <Zap className="h-8 w-8" />,
-    title: "Motion Graphics",
-    description: "Eye-catching animated graphics, titles, and lower thirds for professional presentation.",
-    features: ["Animated Titles", "Logo Animation", "Lower Thirds", "Infographics"]
+    title: "VFX & 3D Editing",
+    description: "Advanced visual effects and 3D editing to create stunning and immersive content.",
+    features: ["3D Animation", "Visual Effects", "Compositing", "Motion Graphics"]
   },
   {
     icon: <Target className="h-8 w-8" />,
-    title: "Finishing",
-    description: "Final output optimization and delivery in any format for any platform.",
-    features: ["Format Optimization", "Platform Delivery", "Quality Control", "Archive Creation"]
+    title: "Model Portfolio Shoots",
+    description: "Professional model portfolio photography and videography to showcase talent.",
+    features: ["Fashion Photography", "Portfolio Videos", "Headshots", "Creative Concepts"]
+  },
+  {
+    icon: <Palette className="h-8 w-8" />,
+    title: "2D Editing & Design",
+    description: "Professional 2D editing, motion graphics, and graphic design services.",
+    features: ["Video Editing", "Motion Graphics", "Graphic Design", "Social Media Content"]
+  },
+  {
+    icon: <Volume2 className="h-8 w-8" />,
+    title: "Audio Post-Production",
+    description: "Complete audio services including mixing, mastering, and sound design.",
+    features: ["Audio Mixing", "Sound Design", "Voice Enhancement", "Music Composition"]
   }
 ];
 
@@ -61,13 +61,13 @@ const Services = () => {
             </div>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-foreground">POST-PRODUCTION</span>
+            <span className="text-foreground">PRE & POST</span>
             <br />
-            <span className="text-primary neon-glow">SERVICES</span>
+            <span className="text-primary neon-glow">PRODUCTION SERVICES</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            From raw footage to final masterpiece. We handle every aspect of post-production 
-            with precision and creative excellence.
+            Complete production services from concept to delivery. We specialize in corporate, 
+            wedding, and creative content with cutting-edge technology.
           </p>
         </div>
 

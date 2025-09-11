@@ -21,26 +21,26 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-block mb-6">
             <div className="px-4 py-2 bg-card/50 border border-primary/30 rounded-full text-sm text-primary backdrop-blur-sm">
-              ✨ Creative Content Agency
+              ✨ Pre & Post Production Studio
             </div>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-primary neon-glow">VIDEO PRODUCTION,</span>
+            <span className="text-primary neon-glow">PROFESSIONAL</span>
             <br />
-            <span className="text-foreground">WHAT CREATED BY</span>
+            <span className="text-foreground">PHOTO &</span>
             <br />
-            <span className="text-primary neon-glow">FILMMAKERS</span>
+            <span className="text-primary neon-glow">VIDEO PRODUCTION</span>
             <br />
-            <span className="text-foreground">TOGETHER WITH</span>
+            <span className="text-foreground">FROM CONCEPT</span>
             <br />
-            <span className="text-primary neon-glow">MARKETERS</span>
+            <span className="text-primary neon-glow">TO DELIVERY</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-md mx-auto">
-            Content is the new language. We help businesses speak it
+            Complete pre and post production services for corporate, wedding, and creative projects
           </p>
 
           {/* CTA Button */}
@@ -53,19 +53,19 @@ const Hero = () => {
           {/* Service Tags */}
           <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
             <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
-              Podcasts
+              Corporate Videos
             </div>
             <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
-              Interview
+              Wedding Films
             </div>
             <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
-              Courses
+              VFX & 3D
             </div>
             <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
-              Advertising
+              Model Portfolio
             </div>
             <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
-              Show
+              Photography
             </div>
           </div>
 
@@ -73,12 +73,12 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto text-left">
             <div>
               <p className="text-sm text-muted-foreground">
-                Own studio for content creation or on-site filming
+                Professional studio setup with state-of-the-art equipment for all your production needs
               </p>
             </div>
             <div>
               <p className="text-sm text-muted-foreground">
-                Full provision of all organizational issues and equipment
+                Complete end-to-end service from pre-production planning to final delivery
               </p>
             </div>
           </div>
