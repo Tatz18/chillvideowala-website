@@ -24,16 +24,36 @@ const Footer = () => {
               wedding films, VFX, and creative content. Based in West Bengal, serving clients nationwide.
             </p>
             <div className="flex items-center gap-4">
-              <Button variant="outline" size="sm" className="p-2">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="p-2"
+                onClick={() => window.open("https://instagram.com/chillvideowala", "_blank")}
+              >
                 <Instagram className="h-4 w-4" />
               </Button>
-              <Button variant="outline" size="sm" className="p-2">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="p-2"
+                onClick={() => window.open("https://youtube.com/@chillvideowala", "_blank")}
+              >
                 <Youtube className="h-4 w-4" />
               </Button>
-              <Button variant="outline" size="sm" className="p-2">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="p-2"
+                onClick={() => window.open("https://linkedin.com/company/chillvideowala", "_blank")}
+              >
                 <Linkedin className="h-4 w-4" />
               </Button>
-              <Button variant="outline" size="sm" className="p-2">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="p-2"
+                onClick={() => window.open("https://twitter.com/chillvideowala", "_blank")}
+              >
                 <Twitter className="h-4 w-4" />
               </Button>
             </div>

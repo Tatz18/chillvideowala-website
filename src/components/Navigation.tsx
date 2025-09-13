@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import ContactModal from "@/components/ContactModal";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,9 +59,11 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="sm">
-              Get Quote
-            </Button>
+            <ContactModal>
+              <Button variant="hero" size="sm">
+                Get Quote
+              </Button>
+            </ContactModal>
           </div>
 
           {/* Mobile menu button */}
@@ -114,9 +117,11 @@ const Navigation = () => {
               >
                 Contact
               </Link>
-              <Button variant="hero" size="sm" className="w-fit">
-                Get Quote
-              </Button>
+              <ContactModal>
+                <Button variant="hero" size="sm" className="w-fit">
+                  Get Quote
+                </Button>
+              </ContactModal>
             </div>
           </div>
         )}

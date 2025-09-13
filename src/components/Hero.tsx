@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Play, ArrowDown } from "lucide-react";
 import heroWorkspace from "@/assets/hero-workspace.jpg";
+import ContactModal from "@/components/ContactModal";
 
 const Hero = () => {
   return (
@@ -45,28 +46,48 @@ const Hero = () => {
 
           {/* CTA Button */}
           <div className="mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:bg-primary/90">
-              Fill in the brief →
-            </Button>
+            <ContactModal 
+              title="Start Your Project"
+              description="Fill out the form below and we'll get back to you with a detailed quote within 24 hours."
+            >
+              <Button variant="hero" size="lg" className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:bg-primary/90">
+                Fill in the brief →
+              </Button>
+            </ContactModal>
           </div>
 
           {/* Service Tags */}
           <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
-            <div className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth">
+            <button 
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth cursor-pointer"
+            >
               Corporate Videos
-            </div>
-            <div className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth">
+            </button>
+            <button 
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth cursor-pointer"
+            >
               Wedding Films
-            </div>
-            <div className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth">
+            </button>
+            <button 
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth cursor-pointer"
+            >
               VFX & 3D
-            </div>
-            <div className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth">
+            </button>
+            <button 
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth cursor-pointer"
+            >
               Model Portfolio
-            </div>
-            <div className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth">
+            </button>
+            <button 
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth cursor-pointer"
+            >
               Photography
-            </div>
+            </button>
           </div>
         </div>
       </div>

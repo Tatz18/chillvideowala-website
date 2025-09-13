@@ -8,6 +8,7 @@ import {
   CheckCircle,
   Star
 } from "lucide-react";
+import ContactModal from "@/components/ContactModal";
 
 const About = () => {
   return (
@@ -53,10 +54,15 @@ const About = () => {
               </div>
             </div>
 
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              <Heart className="mr-2" />
-              Work With Us
-            </Button>
+            <ContactModal
+              title="Work With Our Team"
+              description="Let's discuss how we can bring your creative vision to life with our expertise and passion."
+            >
+              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
+                <Heart className="mr-2" />
+                Work With Us
+              </Button>
+            </ContactModal>
           </div>
 
           {/* Right Side - Stats Cards */}

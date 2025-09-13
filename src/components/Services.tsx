@@ -9,6 +9,7 @@ import {
   Target,
   ArrowRight
 } from "lucide-react";
+import ContactModal from "@/components/ContactModal";
 
 const services = [
   {
@@ -95,9 +96,14 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline" className="w-full">
-                  Learn More
-                </Button>
+                <ContactModal 
+                  title={`Learn More About ${service.title}`}
+                  description={`Get detailed information and pricing for our ${service.title.toLowerCase()} services.`}
+                >
+                  <Button variant="outline" className="w-full">
+                    Learn More
+                  </Button>
+                </ContactModal>
               </CardContent>
             </Card>
           ))}
@@ -105,10 +111,12 @@ const Services = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-6 mt-8">
-            <Zap className="mr-2" />
-            Start Your Project
-          </Button>
+          <ContactModal>
+            <Button variant="hero" size="lg" className="text-lg px-8 py-6 mt-8">
+              <Zap className="mr-2" />
+              Start Your Project
+            </Button>
+          </ContactModal>
         </div>
       </div>
     </section>

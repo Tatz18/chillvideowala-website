@@ -11,8 +11,60 @@ import {
   MessageSquare,
   Calendar
 } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    projectType: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Simulate form submission
+    await new Promise(resolve => setTimeout(resolve, 1500));
+
+    toast({
+      title: "Message Sent Successfully!",
+      description: "We've received your message and will get back to you within 24 hours.",
+    });
+
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      projectType: "",
+      message: ""
+    });
+    setIsSubmitting(false);
+  };
+
+  const handleChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
+  const handleScheduleCall = () => {
+    window.open("https://calendly.com/chillvideowala", "_blank");
+  };
+
+  const handleWhatsApp = () => {
+    const message = "Hi! I'm interested in your video production services. Can we discuss my project?";
+    window.open(`https://wa.me/918981104129?text=${encodeURIComponent(message)}`, "_blank");
+  };
+
+  const handleRequestQuote = () => {
+    const subject = "Quote Request - Video Production Services";
+    const body = "Hi,\n\nI would like to request a quote for video production services.\n\nProject Details:\n- \n\nPlease let me know your availability and pricing.\n\nThanks!";
+    window.open(`mailto:chillvideowala@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, "_blank");
+  };
   return (
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
@@ -47,49 +99,81 @@ const Contact = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-foreground mb-2 block">
+                      First Name
+                    </label>
+                    <Input 
+                      placeholder="John" 
+                      value={formData.firstName}
+                      onChange={(e) => handleChange("firstName", e.target.value)}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-foreground mb-2 block">
+                      Last Name
+                    </label>
+                    <Input 
+                      placeholder="Doe" 
+                      value={formData.lastName}
+                      onChange={(e) => handleChange("lastName", e.target.value)}
+                      required
+                    />
+                  </div>
+                </div>
+                
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
-                    First Name
+                    Email
                   </label>
-                  <Input placeholder="John" />
+                  <Input 
+                    type="email" 
+                    placeholder="john@example.com" 
+                    value={formData.email}
+                    onChange={(e) => handleChange("email", e.target.value)}
+                    required
+                  />
                 </div>
+                
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
-                    Last Name
+                    Project Type
                   </label>
-                  <Input placeholder="Doe" />
+                  <Input 
+                    placeholder="e.g., Corporate Video, Wedding Film, VFX" 
+                    value={formData.projectType}
+                    onChange={(e) => handleChange("projectType", e.target.value)}
+                    required
+                  />
                 </div>
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium text-foreground mb-2 block">
-                  Email
-                </label>
-                <Input type="email" placeholder="john@example.com" />
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium text-foreground mb-2 block">
-                  Project Type
-                </label>
-                <Input placeholder="e.g., Color Grading, Sound Design, Full Post-Production" />
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium text-foreground mb-2 block">
-                  Project Details
-                </label>
-                <Textarea 
-                  placeholder="Tell us about your project, timeline, and any specific requirements..."
-                  rows={5}
-                />
-              </div>
-              
-              <Button variant="hero" size="lg" className="w-full text-lg">
-                <Send className="mr-2 h-5 w-5" />
-                Send Message
-              </Button>
+                
+                <div>
+                  <label className="text-sm font-medium text-foreground mb-2 block">
+                    Project Details
+                  </label>
+                  <Textarea 
+                    placeholder="Tell us about your project, timeline, and any specific requirements..."
+                    rows={5}
+                    value={formData.message}
+                    onChange={(e) => handleChange("message", e.target.value)}
+                    required
+                  />
+                </div>
+                
+                <Button 
+                  type="submit" 
+                  variant="hero" 
+                  size="lg" 
+                  className="w-full text-lg"
+                  disabled={isSubmitting}
+                >
+                  <Send className="mr-2 h-5 w-5" />
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </Button>
+              </form>
             </CardContent>
           </Card>
 
@@ -159,15 +243,27 @@ const Contact = () => {
                 <CardTitle className="text-xl text-foreground">Quick Actions</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <Button variant="outline" className="w-full justify-start">
+                <Button 
+                  variant="outline" 
+                  className="w-full justify-start"
+                  onClick={handleScheduleCall}
+                >
                   <Calendar className="mr-2 h-4 w-4" />
                   Schedule a Call
                 </Button>
-                <Button variant="outline" className="w-full justify-start">
+                <Button 
+                  variant="outline" 
+                  className="w-full justify-start"
+                  onClick={handleRequestQuote}
+                >
                   <Mail className="mr-2 h-4 w-4" />
                   Request Quote
                 </Button>
-                <Button variant="neon" className="w-full justify-start">
+                <Button 
+                  variant="neon" 
+                  className="w-full justify-start"
+                  onClick={handleWhatsApp}
+                >
                   <MessageSquare className="mr-2 h-4 w-4" />
                   WhatsApp Chat
                 </Button>

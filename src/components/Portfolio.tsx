@@ -3,53 +3,85 @@ import { Button } from "@/components/ui/button";
 import { Play, ExternalLink } from "lucide-react";
 import timelineInterface from "@/assets/timeline-interface.jpg";
 import equipmentGrid from "@/assets/equipment-grid.jpg";
+import PortfolioModal from "@/components/PortfolioModal";
+import ContactModal from "@/components/ContactModal";
 
 const portfolioItems = [
   {
-    id: 1,
+    id: "1",
     title: "Corporate Brand Film",
     category: "Corporate",
+    description: "A comprehensive brand film showcasing company culture and values through cinematic storytelling and professional interviews.",
     image: timelineInterface,
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    technologies: ["Adobe Premiere Pro", "After Effects", "DaVinci Resolve", "Color Grading"],
+    client: "TechCorp Solutions",
+    year: "2024",
     duration: "2:30",
     tags: ["Corporate Video", "Color Grading", "Motion Graphics"]
   },
   {
-    id: 2,
+    id: "2",
     title: "Wedding Cinematic Film",
     category: "Wedding",
+    description: "An emotional wedding film capturing the beautiful moments of a couple's special day with cinematic quality and artistic storytelling.",
     image: equipmentGrid,
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    technologies: ["Sony FX6", "DaVinci Resolve", "Color Grading", "Sound Design"],
+    client: "Rahul & Priya",
+    year: "2024",
     duration: "8:45",
     tags: ["Wedding Film", "VFX", "Color Grading"]
   },
   {
-    id: 3,
+    id: "3",
     title: "Model Portfolio Shoot",
     category: "Fashion",
+    description: "High-fashion portfolio shoot combining photography and videography to showcase model's versatility and range.",
     image: timelineInterface,
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    technologies: ["Canon R5", "Lightroom", "Photoshop", "Video Editing"],
+    client: "Fashion Forward Agency",
+    year: "2024",
     duration: "3:20",
     tags: ["Fashion Photography", "Portfolio Video", "Editing"]
   },
   {
-    id: 4,
+    id: "4",
     title: "Product Launch Campaign",
     category: "Commercial",
+    description: "3D animated product showcase with motion graphics and visual effects for a tech product launch campaign.",
     image: equipmentGrid,
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    technologies: ["Cinema 4D", "After Effects", "Blender", "Motion Graphics"],
+    client: "Innovation Labs",
+    year: "2023",
     duration: "1:45",
     tags: ["3D Animation", "Motion Graphics", "VFX"]
   },
   {
-    id: 5,
+    id: "5",
     title: "Corporate Event Coverage",
     category: "Corporate",
+    description: "Multi-camera coverage of annual corporate event with live streaming and post-production highlights reel.",
     image: timelineInterface,
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    technologies: ["Multi-cam Setup", "Live Streaming", "Adobe Premiere", "Audio Mixing"],
+    client: "Global Enterprises",
+    year: "2023",
     duration: "5:15",
     tags: ["Event Coverage", "Multi-cam Editing", "Color Correction"]
   },
   {
-    id: 6,
+    id: "6",
     title: "Fashion Brand Campaign",
     category: "Fashion",
+    description: "Fashion campaign video featuring VFX compositing and advanced color grading for luxury fashion brand.",
     image: equipmentGrid,
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    technologies: ["VFX Compositing", "Color Grading", "Fashion Photography", "Video Production"],
+    client: "Luxe Fashion House",
+    year: "2023",
     duration: "2:30",
     tags: ["Fashion Film", "VFX", "Color Grading"]
   }
@@ -104,10 +136,12 @@ const Portfolio = () => {
                   className="w-full h-64 object-cover transition-smooth group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center">
-                  <Button variant="hero" size="sm">
-                    <Play className="mr-2 h-4 w-4" />
-                    Watch
-                  </Button>
+                  <PortfolioModal item={item}>
+                    <Button variant="hero" size="sm">
+                      <Play className="mr-2 h-4 w-4" />
+                      Watch
+                    </Button>
+                  </PortfolioModal>
                 </div>
                 <div className="absolute top-4 right-4 bg-black/80 text-white px-2 py-1 rounded text-xs">
                   {item.duration}
@@ -128,10 +162,12 @@ const Portfolio = () => {
                     </span>
                   ))}
                 </div>
-                <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  View Details
-                </Button>
+                <PortfolioModal item={item}>
+                  <Button variant="outline" size="sm" className="w-full">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    View Details
+                  </Button>
+                </PortfolioModal>
               </CardContent>
             </Card>
           ))}
@@ -140,9 +176,11 @@ const Portfolio = () => {
         {/* CTA Section */}
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-6">Ready to create something amazing?</p>
-          <Button variant="neon" size="lg" className="text-lg px-8 py-6">
-            Start Your Project
-          </Button>
+          <ContactModal>
+            <Button variant="neon" size="lg" className="text-lg px-8 py-6">
+              Start Your Project
+            </Button>
+          </ContactModal>
         </div>
       </div>
     </section>
