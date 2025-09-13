@@ -68,20 +68,6 @@ const Hero = () => {
               Photography
             </div>
           </div>
-
-          {/* Service Descriptions */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto text-left">
-            <div>
-              <p className="text-sm text-muted-foreground">
-                Professional studio setup with state-of-the-art equipment for all your production needs
-              </p>
-            </div>
-            <div>
-              <p className="text-sm text-muted-foreground">
-                Complete end-to-end service from pre-production planning to final delivery
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Scroll Indicator */}
