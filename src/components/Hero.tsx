@@ -69,17 +69,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-bounce mb-2">
-          <button 
-            onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-            className="text-primary opacity-70 hover:opacity-100 transition-smooth p-2 rounded-full hover:bg-primary/10"
-            aria-label="Scroll to services section"
-          >
-            <ArrowDown size={24} />
-          </button>
-        </div>
       </div>
     </section>
   );
