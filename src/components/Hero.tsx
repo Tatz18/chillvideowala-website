@@ -52,19 +52,19 @@ const Hero = () => {
 
           {/* Service Tags */}
           <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
-            <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
+            <div className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth">
               Corporate Videos
             </div>
-            <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
+            <div className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth">
               Wedding Films
             </div>
-            <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
+            <div className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth">
               VFX & 3D
             </div>
-            <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
+            <div className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth">
               Model Portfolio
             </div>
-            <div className="px-4 py-2 bg-card border border-primary/30 rounded-full text-sm text-primary">
+            <div className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary backdrop-blur-sm hover:bg-primary/20 transition-smooth">
               Photography
             </div>
           </div>
