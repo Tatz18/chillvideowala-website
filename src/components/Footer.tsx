@@ -20,7 +20,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/6aefb2bd-79c8-424a-bc9c-bf460b8aabe3.png" 
                 alt="Chill Videowala Logo" 
-                className="h-16 w-16 object-contain"
+                className="h-25 w-25 object-contain"
               />
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
