@@ -22,9 +22,6 @@ const Footer = () => {
                 alt="Chill Videowala Logo" 
                 className="h-10 w-10 object-contain"
               />
-              <h2 className="text-3xl font-bold text-primary neon-glow">
-                Chill Videowala
-              </h2>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
               India's premier pre and post production studio specializing in corporate photography, 
