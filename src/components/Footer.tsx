@@ -16,9 +16,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <h2 className="text-3xl font-bold text-primary neon-glow mb-4">
-              Chill Videowala
-            </h2>
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src="/lovable-uploads/6aefb2bd-79c8-424a-bc9c-bf460b8aabe3.png" 
+                alt="Chill Videowala Logo" 
+                className="h-10 w-10 object-contain"
+              />
+              <h2 className="text-3xl font-bold text-primary neon-glow">
+                Chill Videowala
+              </h2>
+            </div>
             <p className="text-muted-foreground mb-6 max-w-md">
               India's premier pre and post production studio specializing in corporate photography, 
               wedding films, VFX, and creative content. Based in West Bengal, serving clients nationwide.
