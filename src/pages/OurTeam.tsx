@@ -15,36 +15,20 @@ import {
 const OurTeam = () => {
   const teamMembers = [
     {
-      name: "Rajesh Kumar",
-      role: "Creative Director & Lead Editor",
+      name: "Mritunjoy Mahato",
+      role: "CEO & Creative Director & Lead Editor",
       image: "/placeholder.svg",
-      bio: "With over 8 years in the industry, Rajesh specializes in cinematic storytelling and has worked on 200+ corporate and wedding projects.",
-      skills: ["Video Editing", "Color Grading", "Creative Direction"],
+      bio: "Visionary leader with expertise in creative direction and video editing. Drives the company's artistic vision and ensures excellence in every project delivered.",
+      skills: ["Creative Direction", "Video Editing", "Leadership", "Strategy"],
       icon: <Edit className="h-6 w-6" />
     },
     {
-      name: "Priya Sharma",
-      role: "VFX & 3D Specialist",
+      name: "Debdip Mondal",
+      role: "Co-founder, CTO & Marketing Head",
       image: "/placeholder.svg",
-      bio: "Priya brings magic to our projects with her expertise in VFX and 3D animation. She has created stunning visuals for major Indian brands.",
-      skills: ["3D Animation", "VFX", "Motion Graphics"],
+      bio: "Technical innovator and marketing strategist leading technology initiatives, brand development, and growth strategies for sustainable business expansion.",
+      skills: ["Technology Leadership", "Marketing Strategy", "Business Development", "Innovation"],
       icon: <Zap className="h-6 w-6" />
-    },
-    {
-      name: "Amit Patel",
-      role: "Lead Photographer & Cinematographer",
-      image: "/placeholder.svg",
-      bio: "Amit captures stunning visuals with his keen eye for composition. He specializes in corporate photography and wedding cinematography.",
-      skills: ["Photography", "Cinematography", "Lighting"],
-      icon: <Camera className="h-6 w-6" />
-    },
-    {
-      name: "Sneha Reddy",
-      role: "Color Grading Artist",
-      image: "/placeholder.svg",
-      bio: "Sneha transforms raw footage into cinematic masterpieces with her expert color grading skills and artistic vision.",
-      skills: ["Color Grading", "Color Correction", "Visual Aesthetics"],
-      icon: <Palette className="h-6 w-6" />
     }
   ];
 

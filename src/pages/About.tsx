@@ -30,28 +30,16 @@ const About = () => {
 
   const team = [
     {
-      name: "Rajesh Kumar",
-      role: "Creative Director & Lead Editor",
+      name: "Mritunjoy Mahato",
+      role: "CEO & Creative Director & Lead Editor",
       image: "/placeholder.svg",
-      bio: "8+ years in video production specializing in corporate and wedding cinematography across India."
+      bio: "Visionary leader driving creative excellence and strategic growth. Expert in video production, storytelling, and team leadership."
     },
     {
-      name: "Priya Sharma",
-      role: "VFX & 3D Specialist",
+      name: "Debdip Mondal",
+      role: "Co-founder, CTO & Marketing Head",
       image: "/placeholder.svg",
-      bio: "Expert in visual effects and 3D animation with experience in major Indian film projects."
-    },
-    {
-      name: "Amit Patel",
-      role: "Lead Photographer",
-      image: "/placeholder.svg",
-      bio: "Professional photographer specializing in corporate events and model portfolio shoots."
-    },
-    {
-      name: "Sneha Reddy",
-      role: "Color Grading Artist",
-      image: "/placeholder.svg",
-      bio: "Cinematic color grading expert bringing visual stories to life with perfect aesthetics."
+      bio: "Technical innovator and marketing strategist. Leading technology initiatives and brand development for sustainable growth."
     }
   ];
 
