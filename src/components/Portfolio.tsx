@@ -9,9 +9,9 @@ import ContactModal from "@/components/ContactModal";
 const portfolioItems = [
   {
     id: "1",
-    title: "Udaipur Palace Wedding",
+    title: "Destination Wedding Film",
     category: "Wedding",
-    description: "A breathtaking destination wedding at the City Palace Udaipur featuring royal ceremonies, traditional rituals, and stunning drone shots over Lake Pichola with 500+ guests.",
+    description: "A breathtaking destination wedding featuring royal ceremonies, traditional rituals, and stunning drone shots with 500+ guests celebrating love in a spectacular venue.",
     image: timelineInterface,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     technologies: ["Sony FX9", "DJI Mavic 3 Cine", "Zhiyun Crane 4", "DaVinci Resolve", "Cinematic Grading"],
@@ -35,13 +35,13 @@ const portfolioItems = [
   },
   {
     id: "3",
-    title: "Model Portfolio - Priya Sharma",
+    title: "Professional Model Portfolio",
     category: "Model Portfolio",
     description: "Professional model portfolio shoot featuring 8 diverse looks from traditional Indian wear to contemporary fashion, shot across iconic Mumbai locations including Marine Drive and Film City.",
     image: timelineInterface,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     technologies: ["Canon R5C", "Sony Alpha 7R V", "Profoto Lighting", "Fashion Retouching", "Portfolio Design"],
-    client: "Priya Sharma - Elite Models",
+    client: "Elite Models Mumbai",
     year: "2024",
     duration: "4:20",
     tags: ["Fashion Portfolio", "Mumbai Locations", "Modeling Agency"]
@@ -74,32 +74,6 @@ const portfolioItems = [
   },
   {
     id: "6",
-    title: "Samsung Galaxy VFX Commercial",
-    category: "3D Editing",
-    description: "3D product visualization and VFX commercial for Samsung Galaxy featuring realistic product renders, particle effects, and seamless integration with live-action footage for national TV campaign.",
-    image: equipmentGrid,
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["Cinema 4D", "Octane Render", "After Effects", "Nuke Compositing", "Product Viz"],
-    client: "Samsung India",
-    year: "2024",
-    duration: "3:00",
-    tags: ["3D VFX", "Product Visualization", "TV Commercial"]
-  },
-  {
-    id: "7",
-    title: "Destination Wedding - Goa Beach",
-    category: "Wedding",
-    description: "Sunset beach wedding in Goa featuring intimate ceremonies, beach party coverage, and underwater couple shoot with dynamic gimbal work and golden hour cinematography.",
-    image: timelineInterface,
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["Sony FX6", "Underwater Housing", "Gimbal Work", "Beach Lighting", "Sunset Timing"],
-    client: "Rohan & Anjali Wedding",
-    year: "2024",
-    duration: "10:15",
-    tags: ["Beach Wedding", "Underwater", "Destination"]
-  },
-  {
-    id: "8",
     title: "Lakme Fashion Week Coverage",
     category: "Product Photography",
     description: "Complete runway and backstage photography coverage for Lakme Fashion Week featuring designer collections, model portfolios, and beauty close-ups with fast-paced shooting requirements.",
@@ -112,7 +86,7 @@ const portfolioItems = [
     tags: ["Fashion Week", "Runway", "Designer Fashion"]
   },
   {
-    id: "9",
+    id: "7",
     title: "Model Portfolio - Elite Agency",
     category: "Model Portfolio",
     description: "Composite card and portfolio creation for emerging models featuring headshots, full-body shots, and versatile looks for agency representation and casting submissions.",
@@ -125,7 +99,7 @@ const portfolioItems = [
     tags: ["Comp Card", "Agency Portfolio", "Professional Headshots"]
   },
   {
-    id: "10",
+    id: "8",
     title: "Logo Animation Package",
     category: "Animation",
     description: "Dynamic 2D/3D logo animation package for corporate brand featuring multiple variations including minimal, full, and intro/outro sequences with modern motion graphics.",
@@ -138,7 +112,7 @@ const portfolioItems = [
     tags: ["Logo Animation", "Motion Graphics", "Brand Identity"]
   },
   {
-    id: "11",
+    id: "9",
     title: "YouTube Vlog Edit Series",
     category: "2D Editing",
     description: "Fast-paced YouTube vlog editing with dynamic cuts, text overlays, color correction, thumbnail creation, and B-roll integration for travel and lifestyle content creator.",
@@ -151,17 +125,17 @@ const portfolioItems = [
     tags: ["YouTube Content", "Vlog Editing", "Social Media"]
   },
   {
-    id: "12",
-    title: "Architectural Visualization",
+    id: "10",
+    title: "Product VFX Commercial",
     category: "3D Editing",
-    description: "Photorealistic 3D architectural visualization for luxury residential project featuring interior/exterior renders, walkthrough animation, and virtual staging with realistic materials and lighting.",
+    description: "3D product visualization and VFX commercial featuring realistic product renders, particle effects, and seamless integration with live-action footage for national advertising campaign.",
     image: equipmentGrid,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["3ds Max", "V-Ray", "Unreal Engine", "Photorealistic Rendering", "Virtual Staging"],
-    client: "Prestige Group Bangalore",
+    technologies: ["Cinema 4D", "Octane Render", "After Effects", "Nuke Compositing", "Product Viz"],
+    client: "National Brand Campaign",
     year: "2024",
-    duration: "4:30",
-    tags: ["Archviz", "Real Estate", "3D Walkthrough"]
+    duration: "3:00",
+    tags: ["3D VFX", "Product Visualization", "TV Commercial"]
   }
 ];
 
