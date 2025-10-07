@@ -9,124 +9,163 @@ import ContactModal from "@/components/ContactModal";
 const portfolioItems = [
   {
     id: "1",
-    title: "Tata Steel Corporate Documentary",
-    category: "Corporate",
-    description: "A powerful 15-minute documentary showcasing Tata Steel's journey from raw material to finished products, featuring interviews with workers, management, and the impact on local communities across Jamshedpur and Kalinganagar plants.",
+    title: "Udaipur Palace Wedding",
+    category: "Wedding",
+    description: "A breathtaking destination wedding at the City Palace Udaipur featuring royal ceremonies, traditional rituals, and stunning drone shots over Lake Pichola with 500+ guests.",
     image: timelineInterface,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["RED Komodo 6K", "DaVinci Resolve", "Adobe After Effects", "Drone Cinematography", "Color Science"],
-    client: "Tata Steel Limited",
+    technologies: ["Sony FX9", "DJI Mavic 3 Cine", "Zhiyun Crane 4", "DaVinci Resolve", "Cinematic Grading"],
+    client: "Arjun & Meera Wedding",
     year: "2024",
-    duration: "15:30",
-    tags: ["Industrial Documentary", "Drone Work", "Corporate Storytelling"]
+    duration: "12:45",
+    tags: ["Destination Wedding", "Royal Venue", "Aerial Shots"]
   },
   {
     id: "2",
-    title: "Destination Wedding - Udaipur Palace",
-    category: "Wedding",
-    description: "An epic 3-day wedding celebration at the City Palace Udaipur, featuring traditional Rajasthani ceremonies, multiple outfit changes, and a cast of 500+ guests. Shot with cinematic techniques including aerial shots of Lake Pichola.",
+    title: "Lakme Lipstick Campaign",
+    category: "Product Photography",
+    description: "High-end product photography campaign for Lakme's new matte lipstick range featuring 12 shades with dramatic lighting, macro shots, and lifestyle compositions for digital and print media.",
     image: equipmentGrid,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["Sony FX9", "DJI Mavic 3 Cine", "Zhiyun Crane 4", "DaVinci Resolve", "Multicam Sync"],
-    client: "Arjun Weds Meera",
+    technologies: ["Phase One IQ4", "Profoto B10", "Focus Stacking", "Beauty Retouching", "Color Calibration"],
+    client: "Lakme Cosmetics India",
     year: "2024",
-    duration: "12:45",
-    tags: ["Destination Wedding", "Aerial Cinematography", "Traditional Ceremonies"]
+    duration: "2:30",
+    tags: ["Beauty Products", "Macro Photography", "Commercial Shoot"]
   },
   {
     id: "3",
-    title: "Bollywood Actress Portfolio - Shraddha",
-    category: "Fashion",
-    description: "High-end fashion portfolio for emerging Bollywood actress featuring 8 different looks - from traditional Indian wear to contemporary fashion. Shot across Mumbai's iconic locations including Marine Drive and Film City.",
+    title: "Model Portfolio - Priya Sharma",
+    category: "Model Portfolio",
+    description: "Professional model portfolio shoot featuring 8 diverse looks from traditional Indian wear to contemporary fashion, shot across iconic Mumbai locations including Marine Drive and Film City.",
     image: timelineInterface,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["Canon R5C", "Sony Alpha 7R V", "Profoto Lighting", "Adobe Lightroom", "Fashion Retouching"],
-    client: "Shraddha Sharma - Rising Star",
+    technologies: ["Canon R5C", "Sony Alpha 7R V", "Profoto Lighting", "Fashion Retouching", "Portfolio Design"],
+    client: "Priya Sharma - Elite Models",
     year: "2024",
     duration: "4:20",
-    tags: ["Celebrity Portfolio", "Fashion Photography", "Mumbai Locations"]
+    tags: ["Fashion Portfolio", "Mumbai Locations", "Modeling Agency"]
   },
   {
     id: "4",
-    title: "Samsung Galaxy S24 Launch Campaign",
-    category: "Commercial",
-    description: "National TV commercial for Samsung Galaxy S24 featuring 3D product animation, lifestyle shots, and AI feature demonstrations. Campaign reached 50M+ viewers across India with localized versions in Hindi, Tamil, and Bengali.",
+    title: "Pixar-Style Character Animation",
+    category: "Animation",
+    description: "3D character animation for children's educational series featuring expressive facial rigs, dynamic movements, and Pixar-inspired rendering style with vibrant colors and engaging storytelling.",
     image: equipmentGrid,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["Cinema 4D", "Octane Render", "Adobe After Effects", "Nuke Compositing", "AI Integration"],
-    client: "Samsung India Electronics",
+    technologies: ["Blender", "Maya", "Arnold Renderer", "Character Rigging", "Motion Capture"],
+    client: "Kids Learning Network",
     year: "2024",
-    duration: "2:45",
-    tags: ["National Campaign", "3D Product Viz", "Multi-language"]
+    duration: "5:15",
+    tags: ["3D Animation", "Character Design", "Educational Content"]
   },
   {
     id: "5",
-    title: "Reliance AGM 2024 - Live Coverage",
-    category: "Corporate",
-    description: "Complete live streaming and post-production coverage of Reliance Industries Annual General Meeting with 12-camera setup, real-time graphics, and same-day highlight reel delivery. Streamed live to 2M+ shareholders worldwide.",
+    title: "Wedding Highlight Reel - 2D Edit",
+    category: "2D Editing",
+    description: "Cinematic wedding film edit featuring color grading, smooth transitions, emotional storytelling, and music synchronization for a traditional Punjabi wedding celebration in Chandigarh.",
     image: timelineInterface,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["Blackmagic ATEM", "12-Camera Setup", "OBS Studio", "Live Graphics", "Satellite Uplink"],
-    client: "Reliance Industries Limited",
+    technologies: ["DaVinci Resolve", "Adobe Premiere Pro", "Color Grading", "Sound Design", "Multicam Editing"],
+    client: "Singh Family Wedding",
     year: "2024",
-    duration: "8:15",
-    tags: ["Live Streaming", "Corporate Events", "Multi-cam Production"]
+    duration: "8:30",
+    tags: ["Wedding Film", "Color Grading", "Cinematic Edit"]
   },
   {
     id: "6",
-    title: "Lakme Fashion Week - Designer Showcase",
-    category: "Fashion",
-    description: "Complete runway coverage for emerging designer Anita Dongre's sustainable fashion line at Lakme Fashion Week Mumbai. Featured backstage interviews, model preparations, and the complete runway show with dynamic camera work.",
+    title: "Samsung Galaxy VFX Commercial",
+    category: "3D Editing",
+    description: "3D product visualization and VFX commercial for Samsung Galaxy featuring realistic product renders, particle effects, and seamless integration with live-action footage for national TV campaign.",
     image: equipmentGrid,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["Sony FX6", "Runway Tracking", "LED Panel Lighting", "Multicam Edit", "Fashion Color Grading"],
-    client: "Anita Dongre Studio",
+    technologies: ["Cinema 4D", "Octane Render", "After Effects", "Nuke Compositing", "Product Viz"],
+    client: "Samsung India",
     year: "2024",
-    duration: "6:30",
-    tags: ["Fashion Week", "Runway Coverage", "Designer Fashion"]
+    duration: "3:00",
+    tags: ["3D VFX", "Product Visualization", "TV Commercial"]
   },
   {
     id: "7",
-    title: "Mahindra XUV700 - Adventure Campaign",
-    category: "Commercial",
-    description: "High-octane automotive commercial featuring the Mahindra XUV700 across diverse Indian terrains - from Rajasthan deserts to Himachal mountains. Includes challenging night shoots and extreme weather conditions.",
+    title: "Destination Wedding - Goa Beach",
+    category: "Wedding",
+    description: "Sunset beach wedding in Goa featuring intimate ceremonies, beach party coverage, and underwater couple shoot with dynamic gimbal work and golden hour cinematography.",
     image: timelineInterface,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["Phantom TMX 7510", "Car Rigs", "Drone Cinematography", "Weather Protection", "Automotive Lighting"],
-    client: "Mahindra & Mahindra",
-    year: "2023",
-    duration: "3:00",
-    tags: ["Automotive", "Adventure", "Multi-location"]
+    technologies: ["Sony FX6", "Underwater Housing", "Gimbal Work", "Beach Lighting", "Sunset Timing"],
+    client: "Rohan & Anjali Wedding",
+    year: "2024",
+    duration: "10:15",
+    tags: ["Beach Wedding", "Underwater", "Destination"]
   },
   {
     id: "8",
-    title: "Cricket Legend Dhoni - Retirement Documentary",
-    category: "Corporate",
-    description: "Intimate documentary following MS Dhoni's final cricket season, featuring exclusive behind-the-scenes footage, family interviews, and never-before-seen moments from his illustrious career spanning 15 years.",
+    title: "Lakme Fashion Week Coverage",
+    category: "Product Photography",
+    description: "Complete runway and backstage photography coverage for Lakme Fashion Week featuring designer collections, model portfolios, and beauty close-ups with fast-paced shooting requirements.",
     image: equipmentGrid,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["Cinema Verité Style", "Archive Integration", "Sports Cinematography", "Interview Setup", "Legacy Storytelling"],
-    client: "Disney+ Hotstar",
-    year: "2023",
-    duration: "45:00",
-    tags: ["Sports Documentary", "Celebrity", "Archive Integration"]
+    technologies: ["Sony Alpha 1", "Canon EOS R3", "Runway Lighting", "Fast AF", "RAW Processing"],
+    client: "Lakme Fashion Week Mumbai",
+    year: "2024",
+    duration: "6:45",
+    tags: ["Fashion Week", "Runway", "Designer Fashion"]
   },
   {
     id: "9",
-    title: "Royal Bengal Wedding - Kolkata",
-    category: "Wedding",
-    description: "Traditional Bengali wedding spanning 5 days of ceremonies in heritage Kolkata venues. Featured elaborate decorations, 1000+ guests, classical music performances, and traditional rituals captured with respect for cultural authenticity.",
+    title: "Model Portfolio - Elite Agency",
+    category: "Model Portfolio",
+    description: "Composite card and portfolio creation for emerging models featuring headshots, full-body shots, and versatile looks for agency representation and casting submissions.",
     image: timelineInterface,
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    technologies: ["Cultural Sensitivity", "Heritage Venue Filming", "Traditional Music Recording", "Bengali Customs", "Multi-generational Coverage"],
-    client: "Roy & Chatterjee Families",
-    year: "2023",
-    duration: "18:20",
-    tags: ["Bengali Wedding", "Cultural Traditions", "Heritage Venues"]
+    technologies: ["Hasselblad H6D", "Studio Lighting", "Composite Design", "Retouching", "Print Ready"],
+    client: "Elite Model Management",
+    year: "2024",
+    duration: "3:45",
+    tags: ["Comp Card", "Agency Portfolio", "Professional Headshots"]
+  },
+  {
+    id: "10",
+    title: "Logo Animation Package",
+    category: "Animation",
+    description: "Dynamic 2D/3D logo animation package for corporate brand featuring multiple variations including minimal, full, and intro/outro sequences with modern motion graphics.",
+    image: equipmentGrid,
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    technologies: ["After Effects", "Cinema 4D", "Motion Design", "Brand Guidelines", "Multi-format Export"],
+    client: "Tech Startup India",
+    year: "2024",
+    duration: "1:30",
+    tags: ["Logo Animation", "Motion Graphics", "Brand Identity"]
+  },
+  {
+    id: "11",
+    title: "YouTube Vlog Edit Series",
+    category: "2D Editing",
+    description: "Fast-paced YouTube vlog editing with dynamic cuts, text overlays, color correction, thumbnail creation, and B-roll integration for travel and lifestyle content creator.",
+    image: timelineInterface,
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    technologies: ["Final Cut Pro", "Adobe Premiere", "Motion Templates", "Thumbnail Design", "YouTube SEO"],
+    client: "Travel Vlogger - Wanderlust Journeys",
+    year: "2024",
+    duration: "12:00",
+    tags: ["YouTube Content", "Vlog Editing", "Social Media"]
+  },
+  {
+    id: "12",
+    title: "Architectural Visualization",
+    category: "3D Editing",
+    description: "Photorealistic 3D architectural visualization for luxury residential project featuring interior/exterior renders, walkthrough animation, and virtual staging with realistic materials and lighting.",
+    image: equipmentGrid,
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    technologies: ["3ds Max", "V-Ray", "Unreal Engine", "Photorealistic Rendering", "Virtual Staging"],
+    client: "Prestige Group Bangalore",
+    year: "2024",
+    duration: "4:30",
+    tags: ["Archviz", "Real Estate", "3D Walkthrough"]
   }
 ];
 
-const categories = ["All", "Corporate", "Wedding", "Fashion", "Commercial"];
+const categories = ["All", "Wedding", "Product Photography", "Model Portfolio", "Animation", "2D Editing", "3D Editing"];
 
 const Portfolio = () => {
   return (
@@ -150,8 +189,45 @@ const Portfolio = () => {
           </p>
         </div>
 
+        {/* Story-Style Horizontal Scroll */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-foreground mb-6 px-4">Latest Stories</h3>
+          <div className="flex overflow-x-auto gap-4 pb-4 px-4 scrollbar-hide snap-x snap-mandatory">
+            {portfolioItems.slice(0, 8).map((item) => (
+              <PortfolioModal key={item.id} item={item}>
+                <div className="flex-shrink-0 w-32 cursor-pointer snap-start">
+                  <div className="relative">
+                    {/* Story Ring */}
+                    <div className="w-32 h-32 rounded-full p-1 bg-gradient-to-tr from-primary via-accent to-secondary">
+                      <div className="w-full h-full rounded-full border-4 border-background overflow-hidden">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                    {/* Play Icon Overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="bg-black/60 rounded-full p-2">
+                        <Play className="h-6 w-6 text-white fill-white" />
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-center text-sm mt-2 text-foreground font-medium truncate">
+                    {item.category}
+                  </p>
+                  <p className="text-center text-xs text-muted-foreground truncate">
+                    {item.duration}
+                  </p>
+                </div>
+              </PortfolioModal>
+            ))}
+          </div>
+        </div>
+
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
           {categories.map((category) => (
             <Button
               key={category}
@@ -171,7 +247,7 @@ const Portfolio = () => {
               <div className="relative overflow-hidden">
                 <img
                   src={item.image}
-                  alt={`${item.title} - ${item.category} video project showcasing professional post-production work`}
+                  alt={`${item.title} - ${item.category} project showcasing professional work`}
                   className="w-full h-64 object-cover transition-smooth group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center">
