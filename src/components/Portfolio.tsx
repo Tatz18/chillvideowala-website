@@ -5,6 +5,7 @@ import timelineInterface from "@/assets/timeline-interface.jpg";
 import equipmentGrid from "@/assets/equipment-grid.jpg";
 import PortfolioModal from "@/components/PortfolioModal";
 import ContactModal from "@/components/ContactModal";
+import { useState } from "react";
 
 const portfolioItems = [
   {
@@ -142,6 +143,12 @@ const portfolioItems = [
 const categories = ["All", "Wedding", "Product Photography", "Model Portfolio", "Animation", "2D Editing", "3D Editing"];
 
 const Portfolio = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const filteredItems = selectedCategory === "All" 
+    ? portfolioItems 
+    : portfolioItems.filter(item => item.category === selectedCategory);
+
   return (
     <section id="portfolio" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
@@ -167,7 +174,7 @@ const Portfolio = () => {
         <div className="mb-12">
           <h3 className="text-2xl font-bold text-foreground mb-6 px-4">Latest Stories</h3>
           <div className="flex overflow-x-auto gap-4 pb-4 px-4 scrollbar-hide snap-x snap-mandatory">
-            {portfolioItems.slice(0, 8).map((item) => (
+            {filteredItems.slice(0, 8).map((item) => (
               <PortfolioModal key={item.id} item={item}>
                 <div className="flex-shrink-0 w-32 cursor-pointer snap-start">
                   <div className="relative">
@@ -205,9 +212,10 @@ const Portfolio = () => {
           {categories.map((category) => (
             <Button
               key={category}
-              variant={category === "All" ? "default" : "outline"}
+              variant={selectedCategory === category ? "default" : "outline"}
               size="sm"
               className="text-sm"
+              onClick={() => setSelectedCategory(category)}
             >
               {category}
             </Button>
@@ -216,7 +224,7 @@ const Portfolio = () => {
 
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {portfolioItems.map((item) => (
+          {filteredItems.map((item) => (
             <Card key={item.id} className="group overflow-hidden bg-card border-border/50 hover:border-primary/30 transition-smooth">
               <div className="relative overflow-hidden">
                 <img
